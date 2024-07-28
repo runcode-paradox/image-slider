@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section class="image">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio" id="radio1">
+                <input type="radio" name="radio" id="radio2">
+                <input type="radio" name="radio" id="radio3">
+                <input type="radio" name="radio" id="radio4">
+                <input type="radio" name="radio" id="radio5">
+                <div class="images first">
+                    <img src="chicken.jpeg" width="500" height="500" alt="">
+                </div>
+                <div class="images">
+                    <img src="dosa.jpeg" width="500" height="500" alt="">
+                </div>
+                <div class="images">
+                    <img src="rotis.jpeg" width="500" height="500" alt="">
+                </div>
+                <div class="images">
+                    <img src="south indian.jpeg" width="500" height="500" alt="">
+                </div>
+                <div class="images">
+                    <img src="briyani.jpeg"width="500" height="500" alt="">
+                </div>
+                <div class="nav">
+                    <div class="m1"></div>
+                    <div class="m2"></div>
+                    <div class="m3"></div>
+                    <div class="m4"></div>
+                    <div class="m5"></div>
+                </div>
+                <div class="nav1">
+                    <label for="radio1" class="a1"></label>
+                    <label for="radio2" class="a1"></label>
+                    <label for="radio3" class="a1"></label>
+                    <label for="radio4" class="a1"></label>
+                    <label for="radio5" class="a1"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter>5){
+                counter=1;
+            }
+        },5000)
+    </script>
+</body>
+</html>
